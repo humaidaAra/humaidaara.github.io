@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sliderStyle.css">
+    <link rel="stylesheet" href="blogPost.css">
+    <link rel="stylesheet" href="profileStyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div id="navBG"></div>
+        <nav class="navbar">
+            <a href=""><img src="Img/zherzamin.svg" class="nav-logo" /></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><span class="crossLine"><a href="#" class="nav-link" id="">Home</a></span></li>
+                <!-- <li class="nav-item"><span class="crossLine"><a href="#" class="nav-link" id="">About</a></span></li> -->
+                <li class="nav-item"><span class="crossLine"><a href="articles.html" class="nav-link" id="">Articles</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="events.html" class="nav-link" id="">Events</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="exhibition.html" class="nav-link" id="">Exhibtions</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="profiles.html" class="nav-link" id="">Profiles</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a onclick="formFunction()" class="nav-link" id="">Contact</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="FAQ.html" class="nav-link" id="">FAQ</a></span></li>
+            </ul>
+            <div class="dropdown">
+                <div id="formDropdown" class="dropdown-content">
+                    <h2>Contact Us</h2>
+                    <div class="formBackground">
+                        <form class="form" id="addForm">
+                            <input type="name" placeholder="Name*" name="" id="name" required>
+                            <input type="email" placeholder="Email*" name="" id="email" required>
+                            <textarea name="message" placeholder="Message" id="textarea" cols="30" rows="10" required></textarea>
+
+                            <button class="bttn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="allSections">
+        <input type="radio" id="s-1" name="slider-control" checked="checked">
+        <input type="radio" id="s-2" name="slider-control">
+        <input type="radio" id="s-3" name="slider-control">
+        <div class="js-slider">
+            <figure class="js-slider_item img-1">
+                <div class="js-slider_img">
+                    <img class="c-img-w-full" src="http://stuckincustoms.smugmug.com/Portfolio/i-JSxf5Nm/0/X3/Burning-Man-Day-6%20%28202%20of%201606%29-X3.jpg" alt="">
+                </div>
+               
+            </figure>
+            <figure class="js-slider_item img-2">
+                <div class="js-slider_img">
+                    <img class="c-img-w-full" src="http://stuckincustoms.smugmug.com/Portfolio/i-KMjVHRd/0/X3/Andramada-X3.jpg" alt=""></div>
+               
+            </figure>
+            <figure class="js-slider_item img-3">
+                <div class="js-slider_img">
+                    <img class="c-img-w-full" src="http://stuckincustoms.smugmug.com/Burning-Man/i-dd9xmfn/0/X3/The%20Steamy%20Car-X3.jpg" alt=""></div>
+            </figure>
+            <div class="js-slider_nav">
+                <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
+                <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+                <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+                <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+                <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+                <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+            </div>
+            <div class="js-slider_indicator">
+                <div class="js-slider-indi indi-1"></div>
+                <div class="js-slider-indi indi-2"></div>
+                <div class="js-slider-indi indi-3"></div>
+            </div>
+        </div>
+    </section>
+    <main class="mainSection">
+        <section class="allSections">
+            <div class="homeEvents">
+                <h1>Our Recent Events</h1>
+                <div class="postCards" id="injbody">
+                <!-- <div class="cardItem">
+                        <div class="blog-card">
+                            <img src="Img/nature-landscape-portrait-display-hd-wallpaper-preview.jpg" alt="">
+                            <div class="title-content">
+                                <h3><a href="#">This Is our first event</a></h3>
+                                ///////////////////<div class="intro">Basement Inspiration</div>
+                            </div>
+                            <div class="card-info">
+                                ///////////////////Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...
+                                <a href="#">More about this event</a>
+                            </div>
+                            <div class="gradient-overlay"></div>
+                            <div class="color-overlay"></div>
+                        </div>
+                    </div> -->
+                   <!-- <div class="cardItem">
+                        <div class="blog-card">
+                            <img src="Img/best-portrait-photography.preview.jpg" alt="">
+                            <div class="title-content">
+                                <h3><a href="#">This Is our second event</a></h3>
+                                <div class="intro">2020 Event</div>
+                            </div>
+                            <div class="card-info">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...
+                                <a href="#">More about this event</a>
+                            </div>
+                            <div class="gradient-overlay"></div>
+                            <div class="color-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="cardItem">
+                        <div class="blog-card">
+                            <img src="Img/nature-3338643_960_720.jpg" alt="">
+                            <div class="title-content">
+                                <h3><a href="#">This Is our third event</a></h3>
+                                <div class="intro">Workshop</div>
+                            </div>
+                            <div class="card-info">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...
+                                <a href="#">More about this event</a>
+                            </div>
+                            <div class="gradient-overlay"></div>
+                            <div class="color-overlay"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="allSections">
+            <h1>Our Recent Articles</h1>
+            <div class="postCards" id="injbody2">
+                 <a href="#" class="articleCard daily">
+                    <div class="cardImg">
+                        <img src="Img/basement 2.jpg" alt="">
+                    </div>
+                    <div class="cardInfo">
+                        <h2>This is a title</h2>
+                        <span class="category ">daily</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nemo, exercitationem doloremque at vero ducimus repellendus architecto sapiente ratione odio similique, quaerat quia? Cupiditate sit earum tempore est quas quo?</p>
+                        <span class="postDate">1-aug-2022</span>
+                    </div>
+                </a>
+               <!--<a href="#" class="articleCard workshop daily">
+                    <div class="cardImg">
+                        <img src="Img/basement 3.jpg" alt="">
+                    </div>
+                    <div class="cardInfo">
+                        <h2>This is a title</h2>
+                        <span class="category ">workshop</span>
+                        <span class="category ">daily</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nemo, exercitationem doloremque at vero ducimus repellendus architecto sapiente ratione odio similique, quaerat quia? Cupiditate sit earum tempore est quas quo?</p>
+                        <span class="postDate">1-aug-2022</span>
+                    </div>
+                </a> -->
+            </div>
+        </section>
+
+    </main>
+    <footer class="footerSections">
+        <h3>This website was initiated curtsy of Autumn and Mariwan Crockwell</h3>
+        <div class="SpounsorsSection">
+            <h2>Sponsors</h2>
+            <div class="">
+                <a href=""><span class="fab fa-adobe icon">Asiacell</span></a>
+                <a href=""><span class="fab fa-keybase icon">KorekTelecom</span></a>
+                <a href=""><span class="fab fa-quora icon">aiwan</span></a>
+                <a href=""><span class="fab fa-bandcamp icon">BamoCo</span></a>
+                <a href=""><span class="fab fa-adobe icon">Asiacell</span></a>
+                <a href=""><span class="fab fa-keybase icon">KorekTelecom</span></a>
+                <a href=""><span class="fab fa-quora icon">aiwan</span></a>
+                <a href=""><span class="fab fa-bandcamp icon">BamoCo</span></a><a href=""><span class="fab fa-adobe icon">Asiacell</span></a>
+                <a href=""><span class="fab fa-keybase icon">KorekTelecom</span></a>
+                <a href=""><span class="fab fa-quora icon">aiwan</span></a>
+                <a href=""><span class="fab fa-bandcamp icon">BamoCo</span></a>
+            </div>
+        </div>
+        <div class="socialLinks">
+            <a href="#"><span class="fab fa-facebook icon"></span></a>
+            <a href="#"><span class="fab fa-github icon"></span></a>
+            <a href="#"><span class="fab fa-twitter icon"></span></a>
+            <a href="#"><span class="fab fa-youtube icon"></span></a>
+        </div>
+        <span class="copyRightText">© 2022 <span class="crossLine"><a class="nav-link" id="">Zherzamin</a></span></span>
+    </footer>
+    <script src="script.js"></script>
+    <script src="./index.bundle.js" type="module"></script>
+</body>
+
+</html>
