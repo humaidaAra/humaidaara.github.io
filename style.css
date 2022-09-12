@@ -43,6 +43,7 @@
 
 a {
     text-decoration: none;
+    color: var(--color-myBlack);
 }
 
 li {
@@ -54,6 +55,7 @@ img {
     object-fit: cover;
     max-height: fit-content !important;
 }
+
 
 body {
     font-family: var(--font-myBody);
@@ -442,7 +444,7 @@ textarea:focus {
 }
 
 .category {
-    /* margin: 5px; */
+    margin: 2px;
     padding: 0px 5px;
     background-color: var(--color-myOrange);
     color: var(--color-myWhite);
@@ -464,8 +466,16 @@ textarea:focus {
     margin-bottom: 5px;
 }
 
-.cardInfo p {
+.cardInfo_nowrap {
     margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.cardInfo_wrap {
+    -webkit-line-clamp: 2;
 }
 
 .postDate {
@@ -481,14 +491,23 @@ textarea:focus {
 .exhibitionCard {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     width: 100%;
+    height: 100%;
     margin: 100px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: box-shadow ease-in-out 350ms;
+}
+
+.exhibitionCard:hover {
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    transition: box-shadow ease-in-out 350ms;
 }
 
 .exhibitionImg {
     width: 100%;
-    margin: 0px 20px;
+    padding: 10px;
 }
 
 .exhibitionImg img {
@@ -497,18 +516,19 @@ textarea:focus {
 }
 
 .exhibitionDesc {
-    max-width: 680px;
-    margin: 0px 10px;
+    max-width: 650px;
+    height: 100%;
+    padding: 0px 20px;
 }
 
-.exhibitionDesc h2 {
-    margin: 20px 5px;
+.exhibition_head {
+    margin: 20px 0px;
 }
 
-.exhibitionDesc p {
+.exhibition_p {
     text-align: justify;
+    margin: 10px 0px;
 }
-
 
 /* ------------------ Footer ------------------- */
 
@@ -538,6 +558,7 @@ textarea:focus {
 }
 
 .icon {
+    max-width: 200px;
     margin: 20px;
     font-size: 30px;
     color: var(--color-myOrange);
