@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cardDisplay.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title id="display_name"></title>
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wmEeUuUxWWpT4qZa4rBhmc7Dw1vCuOn64RcLIn0U0_AwfTFC3lr9iwSVyEjYLFHRkGHXHv4ro2hXSnl38bUkzCWHZNz0KULgO9Nsnq2QG66Ns1EEy9WVqbXccWzALwG0X5vZ2RL_6A0_3vFidqOOKg" charset="UTF-8"></script></head>
+
+<body>
+    <header>
+        <div id="navBG"></div>
+        <nav class="navbar">
+            <a href=""><img src="Img/zherzamin.svg" class="nav-logo" /></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><span class="crossLine"><a href="index.html" class="nav-link" id="">Home</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="articles.html" class="nav-link" id="">Articles</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="events.html" class="nav-link" id="">Events</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="exhibition.html" class="nav-link" id="">Exhibtions</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="profiles.html" class="nav-link" id="">Profiles</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a onclick="formFunction()" class="nav-link" id="">Contact</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="FAQ.html" class="nav-link" id="">FAQ</a></span></li>
+            </ul>
+            <div class="dropdown">
+                <div id="formDropdown" class="dropdown-content">
+                    <h2>Contact Us</h2>
+                    <div class="formBackground">
+                        <form class="form" id="addForm">
+                            <input type="name" placeholder="Name*" name="" id="name" required>
+                            <input type="email" placeholder="Email*" name="" id="email" required>
+                            <textarea name="message" placeholder="Message" id="textarea" cols="30" rows="10" required></textarea>
+
+                            <button class="bttn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="allSections">
+        <div class="cover_container">
+            <img class="cover_img" id="cover_img" alt="">
+        </div>
+    </section>
+    <main class="paragraph_Section">
+        <H1 id="header"></H1>
+        <div class="author_date">
+            <span id="author"></span>
+            <span id="add_date"></span>
+
+        </div>
+        <a class="mirror_post" href="" id="mirror_post">Continue in other language</a>
+        <p class="" id="content"></p>
+        <div class="tag_container" id="tagbody">
+            <h4>Tags</h4>
+        </div>
+        <div class="contributers_container" id="contribody">
+            <h4>Contributers</h4>
+        </div>
+    </main>
+    <footer class="footerSections">
+        <div class="SpounsorsSection">
+            <h2>Sponsors</h2>
+            <div class="sponsor_icon" id="sponserbody">
+            </div>
+        </div>
+        <div class="socialLinks">
+            <a href="#"><span class="fab fa-facebook icon"></span></a>
+            <a href="#"><span class="fab fa-github icon"></span></a>
+            <a href="#"><span class="fab fa-twitter icon"></span></a>
+            <a href="#"><span class="fab fa-youtube icon"></span></a>
+        </div>
+        <h3>This website was initiated curtsy of Autumn and Mariwan Crockwell</h3>
+        <span class="copyRightText">© 2022 <span class="crossLine"><a class="nav-link" id="">Zherzamin</a></span></span>
+    </footer>
+    <script src="script.js"></script>
+    <script src="./openin.bundle.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blogPost.css">
+    <link rel="stylesheet" href="profileStyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>FAQ</title>
+</head>
+
+<body>
+    <header>
+        <div id="navBG"></div>
+        <nav class="navbar">
+            <a href=""><img src="Img/zherzamin.svg" class="nav-logo" /></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><span class="crossLine"><a href="index.html" class="nav-link" id="">Home</a></span></li>
+                <!-- <li class="nav-item"><span class="crossLine"><a href="#" class="nav-link" id="">About</a></span></li> -->
+                <li class="nav-item"><span class="crossLine"><a href="articles.html" class="nav-link" id="">Articles</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="events.html" class="nav-link" id="">Events</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="exhibition.html" class="nav-link" id="">Exhibtions</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a href="profiles.html" class="nav-link" id="">Profiles</a></span></li>
+                <li class="nav-item"><span class="crossLine"><a onclick="formFunction()" class="nav-link" id="">Contact</a></span></li>
+
+                <li class="nav-item"><span class="crossLine"><a href="#" class="nav-link" id="">FAQ</a></span></li>
+            </ul>
+            <div class="dropdown">
+                <div id="formDropdown" class="dropdown-content">
+                    <h2>Contact Us</h2>
+                    <div class="formBackground">
+                        <form class="form" id="addForm">
+                            <input type="name" placeholder="Name*" name="" id="name" required>
+                            <input type="email" placeholder="Email*" name="" id="email" required>
+                            <textarea name="message" placeholder="Message" id="textarea" cols="30" rows="10" required></textarea>
+
+                            <button class="bttn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main class="mainSection">
+        <section class="allSections">
+
+        </section>
+
+    </main>
+    <footer class="footerSections">
+        <div class="socialLinks">
+            <a href="#"><span class="fab fa-facebook icon"></span></a>
+            <a href="#"><span class="fab fa-github icon"></span></a>
+            <a href="#"><span class="fab fa-twitter icon"></span></a>
+            <a href="#"><span class="fab fa-youtube icon"></span></a>
+        </div>
+        <span class="copyRightText">© 2022 <span class="crossLine"><a class="nav-link" id="">Zherzamin</a></span></span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
